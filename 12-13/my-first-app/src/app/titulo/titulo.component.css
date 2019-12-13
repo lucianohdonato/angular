@@ -1,0 +1,7 @@
+.fundo{
+    background-image: url("src/assets/astronomia.png");
+    text-align: center;
+    color: aquamarine;
+    width: 100%; 
+    background-size: 100%;
+}

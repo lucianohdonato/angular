@@ -1,0 +1,7 @@
+.meio{
+    background-image: url("src/assets/universo.png");
+    text-align: center;
+    width: 100%; 
+    height: 500px;
+    background-size: 100%;
+}
