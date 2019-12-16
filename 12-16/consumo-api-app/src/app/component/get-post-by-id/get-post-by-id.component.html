@@ -1,0 +1,25 @@
+<body>
+    <input id="txtUserId" type="number" [(ngModel)]="id" (keyup)="btnClick()"/>
+    <button id="btn" (click)="btnClick()">Consultar</button>
+
+    <br><br>
+    <div *ngIf="id == null || id == 0 || id > 100; else elseBlock">
+        Entrar com Id válido (1 - 100)
+    </div>
+    <ng-template #elseBlock>
+        <table border = 1px style="width: 100%">
+            
+            <th>User Id:</th>
+            <th>Id:</th>
+            <th>Titulo:</th>
+            <th>Comentário:</th>
+            <tr>
+                <td>{{posts.userId}}</td>
+                <td>{{posts.id}}</td>
+                <td>{{posts.title}}</td>
+                <td>{{posts.body}}</td>
+            </tr>
+        </table>
+    </ng-template>
+    
+</body>

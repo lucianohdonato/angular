@@ -1,0 +1,9 @@
+body{
+    background-color: #A9A9A9;
+    height: 100%;
+    min-height: 480px;
+}
+
+.center{
+    text-align: center;
+}

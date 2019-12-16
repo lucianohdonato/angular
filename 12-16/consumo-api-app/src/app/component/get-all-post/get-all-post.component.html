@@ -1,0 +1,18 @@
+
+<div *ngIf="posts != null">
+    <h1>Quantidade de Posts: {{posts.length}}</h1>
+</div>
+<hr><br>
+<table border = 1px>
+    <th>User Id:</th>
+    <th>Id:</th>
+    <th>Titulo:</th>
+    <th>Comentário:</th>
+    <tr *ngFor="let item of posts">
+        <td>{{item.userId}}</td>
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.body}}</td>
+    </tr>
+</table>
+

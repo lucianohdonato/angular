@@ -1,0 +1,10 @@
+.rodaPe{
+    background-color: black;
+    color: wheat;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    height: vh;
+}
