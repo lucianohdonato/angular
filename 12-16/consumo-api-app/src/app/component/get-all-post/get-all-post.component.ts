@@ -23,3 +23,4 @@ export class GetAllPostComponent implements OnInit {
   }
 
 }
+
