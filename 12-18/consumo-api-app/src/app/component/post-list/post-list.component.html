@@ -1,0 +1,18 @@
+<div style="text-align: center">
+    <div *ngIf="post != null">
+        <h1>Quantidade de publicações: {{post.length}}</h1>
+    </div>
+    <hr><br>
+    <table border = 1px style="text-align: center;">
+        <th>User Id:</th>
+        <th>Id:</th>
+        <th>Title:</th>
+        <th>Body:</th>
+        <tr *ngFor="let item of post">
+            <td>{{item.userId}}</td>
+            <td>{{item.id}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.body}}</td>
+        </tr>
+    </table>
+</div>

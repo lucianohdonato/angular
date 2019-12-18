@@ -1,0 +1,26 @@
+<div style="text-align: center">
+    <div *ngIf="user != null">
+        <h1>Quantidade de usuários: {{user.length}}</h1>
+    </div>
+    <hr><br>
+    <div style="align-content: center">
+        <table border = 1px>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Website</th>
+            </tr>
+            <tr *ngFor="let user of user">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.website}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

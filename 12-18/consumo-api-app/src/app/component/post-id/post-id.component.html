@@ -1,0 +1,10 @@
+<div style="text-align: center">
+    <input id="txtPost" type="number" [(ngModel)]="idPost" />
+    <button id="btnPost" (click)="btnClickPost()">Consultar</button>
+    <br><br>
+    <h3>Publicação</h3>
+    <div> <b>UserId:</b><label *ngIf="post.userId != 0"> {{post.userId}}</label></div>
+    <div> <b>Id:</b><label *ngIf="post.id != 0"> {{post.id}}</label></div>
+    <div> <b>Title:</b> {{post.title}} </div>
+    <div> <b>Body:</b> {{post.body}} </div>
+</div>

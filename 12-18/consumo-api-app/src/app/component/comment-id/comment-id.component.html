@@ -1,0 +1,11 @@
+<div style="text-align: center">
+    <input id="txtCommentId" type="number" [(ngModel)]="idComment" />
+    <button id="btnComment" (click)="btnClickComment()">Consultar</button>
+    <br><br>
+    <h3>Comentário</h3>
+    <div> <b>PostId:</b> <label *ngIf="comment.postId != 0">{{comment.postId}}</label></div>
+    <div> <b>Id:</b> <label *ngIf="comment.id != 0">{{comment.id}}</label></div>
+    <div> <b>Name:</b> {{comment.name}} </div>
+    <div> <b>Email:</b> {{comment.email}} </div>
+    <div> <b>Body:</b> {{comment.body}} </div>
+</div>

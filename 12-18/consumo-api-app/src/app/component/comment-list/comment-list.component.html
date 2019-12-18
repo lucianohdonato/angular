@@ -1,0 +1,20 @@
+<div style="text-align: center">
+    <div *ngIf="comment != null">
+        <h1>Quantidade de comentários: {{comment.length}}</h1>
+    </div>
+    <hr><br>
+    <table border = 1px style="text-align: center;">
+        <th>Post Id:</th>
+        <th>Id:</th>
+        <th>Name:</th>
+        <th>Email:</th>
+        <th>Body:</th>
+        <tr *ngFor="let item of comment">
+            <td>{{item.postId}}</td>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.body}}</td>
+        </tr>
+    </table>
+</div>

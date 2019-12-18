@@ -1,0 +1,30 @@
+<div style="text-align: center">
+    <input id="txtUser" type="number" [(ngModel)]="idUser" />
+    <button id="btnUser" (click)="btnClickUser()">Consultar</button>
+    <br><br>
+    <h3>Usuário</h3>
+    <div> Id:<label *ngIf="user.id != 0"> {{user.id}}</label></div>
+    <div> Name: {{user.name}} </div>
+    <div> Username: {{user.username}} </div>
+    <div> Email: {{user.email}} </div>
+    <div> Phone: {{user.phone}} </div>
+    <div> Website: {{user.website}} </div>
+    <div *ngIf="user.address != null">
+        <h3>Address</h3>
+        <div>Street: {{user.address.street}}</div>
+        <div>Suite: {{user.address.suite}}</div>
+        <div>City: {{user.address.city}}</div>
+        <div>Zipcode: {{user.address.zipcode}}</div>
+        <div>
+            <div>Geo:</div>
+            <div class="tab">Lat: {{user.address.geo.lat}}</div>
+            <div class="tab">Lng: {{user.address.geo.lng}}</div>
+        </div>
+    </div>
+    <div *ngIf="user.company != null">
+        <h3>Company</h3>
+        <div>Name: {{user.company.name}}</div>
+        <div>CatchPhrase: {{user.company.catchPhrase}}</div>
+        <div>Bs: {{user.company.bs}}</div>
+    </div>
+</div>
