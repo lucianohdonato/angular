@@ -1,0 +1,11 @@
+<p>Cadastro</p>
+
+E-Mail: <input name="txtEmail" [(ngModel)]="email"> <br/>
+<div *ngIf="erroEmail">* Campo Obrigatorio </div>
+Senha:<input name="txtSenha" [(ngModel)]="senha" (keyup)="tipoSenha()"> {{mensagemTipoSenha}}<br/> Confirmar Senha: <input name="txtConfirmSenha" [(ngModel)]="confirmSenha"> <br/>
+<div *ngIf="erroSenhaNaoConfere">* Senhas não conferem </div>
+<button (click)="salvar()">Salvar</button>
+<br/>
+<br/>
+<br/>
+<br/> {{email}}
